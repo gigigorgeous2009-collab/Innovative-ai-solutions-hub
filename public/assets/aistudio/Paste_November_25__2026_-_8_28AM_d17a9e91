@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Innovative AI Solutions | AI Agents & Machine Learning Services Toronto</title>
+<meta name="description" content="Innovative AI Solutions builds custom AI agents, machine learning models, and intelligent automation for businesses in Toronto and beyond. Free AI readiness consultation." />
+<meta name="keywords" content="AI solutions Toronto, AI agents, machine learning consulting, business automation Toronto, custom AI development, chatbot development" />
+<meta name="author" content="Innovative AI Solutions" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.innovativeaisolutions.ca/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Innovative AI Solutions | AI Agents & ML Services Toronto" />
+<meta property="og:description" content="We design and deploy intelligent AI systems that automate work, unlock data, and grow revenue." />
+<meta property="og:locale" content="en_CA" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Innovative AI Solutions",
+  "description": "Custom AI agents, machine learning models, and intelligent automation for growing businesses.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.6532, "longitude": -79.3832 },
+  "areaServed": "Toronto, Ontario, Canada",
+  "priceRange": "$$",
+  "telephone": "+1-416-555-0142",
+  "email": "hello@innovativeaisolutions.ca",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "sameAs": ["https://www.linkedin.com/company/innovative-ai-solutions", "https://twitter.com/innovativeai_to"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#05070f; --bg2:#090d1a; --panel:rgba(255,255,255,.04);
+  --cyan:#22e6ff; --violet:#8b5cf6; --magenta:#f472d0;
+  --text:#eaf0ff; --muted:#8b96b3; --line:rgba(139,92,246,.22);
+  --radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;line-height:1.6}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;line-height:1.08}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--violet);color:#fff}
+.container{width:min(1180px,92%);margin:0 auto}
+.mono{font-family:'JetBrains Mono',monospace}
+.grad-text{background:linear-gradient(92deg,var(--cyan) 0%,var(--violet) 55%,var(--magenta) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+section{position:relative;padding:110px 0}
+/* ---------- NAV ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:100;transition:.35s}
+header.scrolled{background:rgba(5,7,15,.72);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px;font-family:'Space Grotesk';font-weight:700;font-size:1.15rem;letter-spacing:.5px}
+.logo-mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),var(--violet));box-shadow:0 0 24px rgba(139,92,246,.55)}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:.92rem;color:var(--muted);transition:.25s;position:relative}
+.nav-links a:hover{color:#fff}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet));transition:.3s;border-radius:2px}
+.nav-links a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:14px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;transition:.3s;position:relative;overflow:hidden}
+.btn-primary{background:linear-gradient(92deg,var(--cyan),var(--violet) 60%,var(--magenta));color:#fff;box-shadow:0 8px 30px rgba(139,92,246,.4)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 42px rgba(34,230,255,.35)}
+.btn-ghost{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);color:var(--text)}
+.btn-ghost:hover{border-color:var(--cyan);box-shadow:0 0 24px rgba(34,230,255,.25)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;z-index:110}
+.burger span{width:26px;height:2px;background:#fff;transition:.3s}
+/* ---------- HERO ---------- */
+#hero{min-height:100vh;display:flex;align-items:center;padding:150px 0 90px}
+#webgl{position:fixed;inset:0;z-index:0;pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:100px;background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.35);font-size:.82rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+.pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 0 rgba(34,230,255,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(34,230,255,0)}100%{box-shadow:0 0 0 0 rgba(34,230,255,0)}}
+h1{font-size:clamp(2.6rem,6.2vw,5rem);font-weight:700;letter-spacing:-1.5px;margin-bottom:26px}
+.hero-sub{max-width:620px;color:var(--muted);font-size:1.15rem;margin-bottom:40px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:70px}
+.hero-stats{display:flex;gap:48px;flex-wrap:wrap}
+.stat h3{font-size:2.1rem;background:linear-gradient(92deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat p{color:var(--muted);font-size:.86rem;letter-spacing:.5px}
+/* ---------- MARQUEE ---------- */
+.marquee{border-block:1px solid rgba(255,255,255,.07);padding:22px 0;overflow:hidden;background:rgba(255,255,255,.015);position:relative;z-index:1}
+.marquee-track{display:flex;gap:70px;width:max-content;animation:scroll 28s linear infinite;white-space:nowrap}
+.marquee-track span{color:var(--muted);font-family:'Space Grotesk';font-size:1.05rem;letter-spacing:2px;display:flex;align-items:center;gap:14px}
+.marquee-track span::before{content:'◆';color:var(--violet);font-size:.7rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+/* ---------- SECTION HEADS ---------- */
+.sec-tag{display:inline-block;padding:6px 16px;border-radius:100px;border:1px solid var(--line);color:var(--cyan);font-size:.78rem;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:18px;font-family:'JetBrains Mono'}
+h2{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-1px;margin-bottom:16px}
+.sec-sub{color:var(--muted);max-width:560px;margin-bottom:56px}
+/* ---------- SERVICES ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{position:relative;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:36px 30px;transition:.35s;overflow:hidden;backdrop-filter:blur(8px)}
+.card::before{content:'';position:absolute;inset:0;background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),rgba(139,92,246,.14),transparent 45%);opacity:0;transition:.4s}
+.card:hover::before{opacity:1}
+.card:hover{transform:translateY(-8px);border-color:rgba(139,92,246,.5);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.card .icon{width:56px;height:56px;border-radius:15px;display:grid;place-items:center;margin-bottom:22px;background:linear-gradient(135deg,rgba(34,230,255,.16),rgba(139,92,246,.16));border:1px solid rgba(139,92,246,.35)}
+.card h3{font-size:1.25rem;margin-bottom:12px}
+.card p{color:var(--muted);font-size:.94rem}
+.card .link{display:inline-flex;gap:8px;align-items:center;margin-top:20px;color:var(--cyan);font-size:.9rem;font-weight:600;opacity:.85;transition:.25s}
+.card:hover .link{gap:14px}
+/* ---------- AGENT FLOW ---------- */
+#process{background:linear-gradient(180deg,transparent,rgba(139,92,246,.05),transparent)}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;counter-reset:step}
+.step{padding:32px 26px;border-radius:var(--radius);background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);position:relative;transition:.3s}
+.step:hover{border-color:var(--cyan);transform:translateY(-6px)}
+.step::before{counter-increment:step;content:'0' counter(step);font-family:'JetBrains Mono';font-size:2.4rem;font-weight:600;background:linear-gradient(92deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:14px}
+.step h4{font-size:1.05rem;margin-bottom:10px}
+.step p{color:var(--muted);font-size:.88rem}
+/* ---------- RESULTS ---------- */
+.banner{border-radius:28px;padding:70px 60px;background:linear-gradient(120deg,rgba(34,230,255,.1),rgba(139,92,246,.14),rgba(244,114,208,.1));border:1px solid rgba(139,92,246,.3);position:relative;overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}
+.banner h2{margin-bottom:14px}
+.banner p{color:var(--muted);margin-bottom:32px}
+.big-nums{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.big-num{background:rgba(5,7,15,.5);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px;text-align:center}
+.big-num h3{font-size:2rem;background:linear-gradient(92deg,var(--cyan),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+.big-num p{font-size:.8rem;color:var(--muted);margin-top:6px}
+/* ---------- TESTIMONIALS ---------- */
+.t-card{padding:32px}
+.t-card .quote-mark{font-size:3rem;line-height:1;background:linear-gradient(92deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-family:'Space Grotesk'}
+.t-card p{color:#c6cfe6;font-size:.96rem;margin:14px 0 24px}
+.t-who{display:flex;align-items:center;gap:14px}
+.avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-family:'Space Grotesk';background:linear-gradient(135deg,var(--violet),var(--magenta))}
+.t-who strong{display:block;font-size:.95rem}
+.t-who span{color:var(--muted);font-size:.82rem}
+/* ---------- CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.contact-info h3{font-size:1.4rem;margin-bottom:18px}
+.contact-line{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px;color:var(--muted)}
+.contact-line strong{color:var(--text)}
+form{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:40px;backdrop-filter:blur(10px)}
+.field{margin-bottom:20px}
+label{display:block;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;font-family:'JetBrains Mono'}
+input,textarea,select{width:100%;padding:14px 16px;border-radius:12px;background:rgba(5,7,15,.6);border:1px solid rgba(255,255,255,.12);color:var(--text);font-family:'Inter';font-size:.95rem;transition:.25s;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(34,230,255,.12)}
+textarea{resize:vertical;min-height:120px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-msg{margin-top:14px;font-size:.9rem;color:var(--cyan);display:none}
+/* ---------- FOOTER ---------- */
+footer{border-top:1px solid rgba(255,255,255,.07);padding:56px 0 32px;background:rgba(255,255,255,.015);position:relative;z-index:1}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+footer h4{font-size:1rem;margin-bottom:16px}
+footer a{display:block;color:var(--muted);font-size:.9rem;margin-bottom:10px;transition:.2s}
+footer a:hover{color:var(--cyan)}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.84rem;border-top:1px solid rgba(255,255,255,.06);padding-top:26px}
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(40px)}
+/* ---------- CURSOR ---------- */
+.cursor-glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle,rgba(139,92,246,.09),transparent 60%);transform:translate(-50%,-50%);transition:opacity .3s}
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0;background:rgba(5,7,15,.96);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;font-size:1.4rem;gap:30px;transform:translateX(100%);transition:.4s}
+  .nav-links.open{transform:translateX(0)}
+  .burger{display:flex}
+  .banner,.contact-grid{grid-template-columns:1fr;padding:44px 30px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+  #hero{padding-top:130px}
+}
+</style>
+</head>
+<body>
+
+<div class="cursor-glow" id="glow"></div>
+<canvas id="webgl"></canvas>
+
+<!-- NAV -->
+<header id="header">
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <a href="#hero" class="logo" aria-label="Innovative AI Solutions home">
+        <span class="logo-mark">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M6 7l4 4M18 7l-4 4M6 17l4-4M18 17l-4-4"/></svg>
+        </span>
+        Innovative<span class="grad-text">&nbsp;AI</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#testimonials">Clients</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary" style="padding:11px 24px">Book a Call</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-badge reveal"><span class="pulse-dot"></span> AI Studio — Toronto, ON</div>
+    <h1 class="reveal">Intelligent agents that<br/><span class="grad-text" id="typeTarget">work while you sleep.</span></h1>
+    <p class="hero-sub reveal">Innovative AI Solutions designs, builds, and deploys custom AI agents, machine learning systems, and automation pipelines that cut costs, unlock your data, and grow revenue — 24/7.</p>
+    <div class="hero-cta reveal">
+      <a href="#contact" class="btn btn-primary">Start Your AI Project →</a>
+      <a href="#services" class="btn btn-ghost">Explore Services</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><h3 data-count="40">0</h3><p>+ AI systems shipped</p></div>
+      <div class="stat"><h3 data-count="98">0</h3><p>% client retention</p></div>
+      <div class="stat"><h3 data-count="12">0</h3><p>weeks avg. to ROI</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Custom AI Agents</span><span>Machine Learning</span><span>Process Automation</span><span>Conversational AI</span><span>Computer Vision</span><span>Predictive Analytics</span><span>LLM Integration</span><span>Data Engineering</span>
+    <span>Custom AI Agents</span><span>Machine Learning</span><span>Process Automation</span><span>Conversational AI</span><span>Computer Vision</span><span>Predictive Analytics</span><span>LLM Integration</span><span>Data Engineering</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <span class="sec-tag reveal">// What we build</span>
+    <h2 class="reveal">Agentic AI, engineered for<br/><span class="grad-text">real business outcomes</span></h2>
+    <p class="sec-sub reveal">From strategy to production, we ship AI systems that don't just demo well — they perform under real-world load.</p>
+    <div class="grid-3">
+      <article class="card reveal">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#22e6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM4 12h-2M22 12h-2M12 4V2M12 22v-2"/></svg></div>
+        <h3>Custom AI Agents</h3>
+        <p>Autonomous agents that research, decide, and act across your tools — handling support, ops, sales outreach, and workflows end-to-end.</p>
+        <a class="link" href="#contact">Deploy an agent <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c2.5.5 4 2.5 4 5a5 5 0 0 1-3 4.6A4 4 0 0 1 13 19a3 3 0 0 1-2 1 3 3 0 0 1-2-1 4 4 0 0 1-4-3.4A5 5 0 0 1 2 11c0-2.5 1.5-4.5 4-5a4 4 0 0 1 6-4z"/></svg></div>
+        <h3>Machine Learning Models</h3>
+        <p>Predictive models trained on your data — forecasting demand, scoring leads, detecting churn, and flagging anomalies before they cost you.</p>
+        <a class="link" href="#contact">Model your data <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f472d0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+        <h3>Workflow Automation</h3>
+        <p>We connect your stack — CRM, ERP, email, docs — into self-driving pipelines that eliminate manual busywork across every department.</p>
+        <a class="link" href="#contact">Automate operations <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#22e6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3>Conversational AI</h3>
+        <p>Chatbots and voice assistants grounded in your knowledge base that resolve tickets, qualify leads, and book meetings around the clock.</p>
+        <a class="link" href="#contact">Launch a chatbot <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+        <h3>Data &amp; Analytics</h3>
+        <p>Turn raw data into a decision engine: dashboards, embedded analytics, and insight layers your team will actually use every day.</p>
+        <a class="link" href="#contact">Unlock your data <span>→</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f472d0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></div>
+        <h3>AI Strategy &amp; Consulting</h3>
+        <p>Roadmaps, feasibility audits, and build-vs-buy guidance so you invest in AI that pays back — not hype that sits on a shelf.</p>
+        <a class="link" href="#contact">Get a roadmap <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <span class="sec-tag reveal">// How we work</span>
+    <h2 class="reveal">From idea to autonomous<br/><span class="grad-text">in four moves</span></h2>
+    <p class="sec-sub reveal">A proven, transparent delivery process refined across dozens of Toronto-area deployments.</p>
+    <div class="flow">
+      <div class="step reveal"><h4>Discover &amp; Audit</h4><p>We map your workflows, data, and bottlenecks — then rank AI opportunities by impact and feasibility.</p></div>
+      <div class="step reveal"><h4>Prototype &amp; Validate</h4><p>A working proof-of-concept in weeks, tested on your real data with measurable success criteria.</p></div>
+      <div class="step reveal"><h4>Build &amp; Integrate</h4><p>Production-grade engineering with your existing stack — secure, monitored, and human-in-the-loop.</p></div>
+      <div class="step reveal"><h4>Deploy &amp; Scale</h4><p>We ship, measure ROI, and iterate. Your agents get smarter every sprint, and so do your results.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results">
+  <div class="container">
+    <div class="banner reveal">
+      <div>
+        <span class="sec-tag">// Results</span>
+        <h2>Proof, not <span class="grad-text">promises</span></h2>
+        <p>Every engagement is instrumented. Here's what our clients see after deployment — on average, within the first quarter.</p>
+        <a href="#contact" class="btn btn-primary">Get Your Free AI Audit →</a>
+      </div>
+      <div class="big-nums">
+        <div class="big-num"><h3 data-count="63">0</h3><p>% avg. cost reduction</p></div>
+        <div class="big-num"><h3 data-count="5">0</h3><p>x faster response times</p></div>
+        <div class="big-num"><h3 data-count="27">0</h3><p>% revenue lift reported</p></div>
+        <div class="big-num"><h3 data-count="24">0</h3><p>/7 autonomous operation</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <span class="sec-tag reveal">// Client love</span>
+    <h2 class="reveal">Trusted by teams across<br/><span class="grad-text">the GTA &amp; beyond</span></h2>
+    <p class="sec-sub reveal"></p>
+    <div class="grid-3">
+      <article class="card t-card reveal">
+        <div class="quote-mark">"</div>
+        <p>Their agent now handles 80% of our support tickets overnight. Response time went from hours to seconds, and our CSAT actually went up.</p>
+        <div class="t-who"><div class="avatar">SM</div><div><strong>Sarah Mitchell</strong><span>COO, FinTech Startup — Toronto</span></div></div>
+      </article>
+      <article class="card t-card reveal">
+        <div class="quote-mark">"</div>
+        <p>They didn't sell us hype. The prototype paid for itself in six weeks, and the full rollout was flawless. Best vendor decision we made this year.</p>
+        <div class="t-who"><div class="avatar">DK</div><div><strong>David Kim</strong><span>VP Operations, Logistics — Mississauga</span></div></div>
+      </article>
+      <article class="card t-card reveal">
+        <div class="quote-mark">"</div>
+        <p>Our demand forecasting model cut waste by a third. The team translated AI into plain business language — our board was genuinely impressed.</p>
+        <div class="t-who"><div class="avatar">AR</div><div><strong>Amara Reid</strong><span>CEO, Retail Chain — Vaughan</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="sec-tag">// Let's talk</span>
+        <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Ready to put AI to <span class="grad-text">work for you?</span></h2>
+        <p style="color:var(--muted);margin-bottom:36px">Book a free 30-minute AI readiness consultation. No pitch decks — just a practical look at where AI can move your numbers.</p>
+        <div class="contact-line"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22e6ff" stroke-width="1.8"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Innovative AI Solutions</strong><br/>Toronto, ON, Canada</div></div>
+        <div class="contact-line"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg><div><strong>Email</strong><br/>hello@innovativeaisolutions.ca</div></div>
+        <div class="contact-line"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f472d0" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg><div><strong>Phone</strong><br/>+1 (416) 555-0142</div></div>
+        <div class="contact-line"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22e6ff" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Hours</strong><br/>Mon–Fri, 9:00 AM – 6:00 PM EST</div></div>
+      </div>
+      <form id="contactForm" class="reveal" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Jane Doe" required /></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="jane@company.com" required /></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" placeholder="Company Inc." /></div>
+          <div class="field"><label for="service">Interested in</label>
+            <select id="service" name="service">
+              <option>Custom AI Agents</option><option>Machine Learning</option><option>Automation</option><option>Conversational AI</option><option>Strategy &amp; Consulting</option><option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="message">Tell us about your project</label><textarea id="message" name="message" placeholder="What problem are you trying to solve?" required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send Message →</button>
+        <p class="form-msg" id="formMsg">✓ Thanks! We'll get back to you within one business day.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#hero" class="logo" style="margin-bottom:18px"><span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M6 7l4 4M18 7l-4 4M6 17l4-4M18 17l-4-4"/></svg></span>Innovative<span class="grad-text">&nbsp;AI</span></a>
+        <p style="color:var(--muted);font-size:.9rem;max-width:300px">We build intelligent systems for ambitious businesses. Toronto-based, globally deployed.</p>
+      </div>
+      <div><h4>Services</h4><a href="#services">AI Agents</a><a href="#services">Machine Learning</a><a href="#services">Automation</a><a href="#services">Conversational AI</a></div>
+      <div><h4>Company</h4><a href="#process">Our Process</a><a href="#results">Results</a><a href="#testimonials">Clients</a><a href="#contact">Contact</a></div>
+      <div><h4>Connect</h4><a href="#" rel="noopener">LinkedIn</a><a href="#" rel="noopener">X / Twitter</a><a href="#" rel="noopener">GitHub</a><a href="mailto:hello@innovativeaisolutions.ca">Email Us</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Innovative AI Solutions. All rights reserved.</span>
+      <span>Made with ♥ in Toronto, ON</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ============ 3D NEURAL PARTICLE FIELD ============ */
+(function(){
+  const canvas = document.getElementById('webgl');
+  const renderer = new THREE.WebGLRenderer({canvas, alpha:true, antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, .1, 100);
+  camera.position.z = 8;
+
+  // Particle points
+  const COUNT = 900;
+  const pos = new Float32Array(COUNT*3), cols = new Float32Array(COUNT*3);
+  const cA = new THREE.Color('#22e6ff'), cB = new THREE.Color('#8b5cf6'), cC = new THREE.Color('#f472d0');
+  const base = [];
+  for(let i=0;i<COUNT;i++){
+    const x=(Math.random()-.5)*22, y=(Math.random()-.5)*14, z=(Math.random()-.5)*12;
+    pos.set([x,y,z], i*3); base.push(x,y,z);
+    const c = [cA,cB,cC][Math.floor(Math.random()*3)];
+    cols.set([c.r,c.g,c.b], i*3);
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos,3));
+  geo.setAttribute('color', new THREE.BufferAttribute(cols,3));
+  const mat = new THREE.PointsMaterial({size:.06, vertexColors:true, transparent:true, opacity:.85, blending:THREE.AdditiveBlending, depthWrite:false});
+  const points = new THREE.Points(geo, mat);
+  scene.add(points);
+
+  // Connection lines
+  const linePos = new Float32Array(COUNT*8*3);
+  const lineGeo = new THREE.BufferGeometry();
+  lineGeo.setAttribute('position', new THREE.BufferAttribute(linePos,3));
+  const lines = new THREE.LineSegments(lineGeo, new THREE.LineBasicMaterial({color:0x8b5cf6, transparent:true, opacity:.12, blending:THREE.AdditiveBlending}));
+  scene.add(lines);
+
+  let mouseX=0, mouseY=0;
+  addEventListener('mousemove', e=>{
+    mouseX=(e.clientX/innerWidth-.5)*2; mouseY=(e.clientY/innerHeight-.5)*2;
+    document.getElementById('glow').style.left=e.clientX+'px';
+    document.getElementById('glow').style.top=e.clientY+'px';
+  });
+
+  function resize(){ renderer.setSize(innerWidth, innerHeight); camera.aspect=innerWidth/innerHeight; camera.updateProjectionMatrix(); }
+  addEventListener('resize', resize); resize();
+
+  const pAttr = geo.attributes.position.array;
+  let t=0;
+  (function animate(){
+    requestAnimationFrame(animate);
+    t+=.0025;
+    for(let i=0;i<COUNT;i++){
+      const i3=i*3;
+      pAttr[i3]   = base[i3]   + Math.sin(t*2 + i)*0.35;
+      pAttr[i3+1] = base[i3+1] + Math.cos(t*1.6 + i*0.7)*0.35;
+      pAttr[i3+2] = base[i3+2] + Math.sin(t + i*1.3)*0.3;
+    }
+    geo.attributes.position.needsUpdate = true;
+
+    // rebuild nearby links
+    let lp=0; const maxD=1.6;
+    for(let i=0;i<COUNT;i+=6){
+      for(let j=i+6;j<COUNT;j+=6){
+        const dx=pAttr[i*3]-pAttr[j*3], dy=pAttr[i*3+1]-pAttr[j*3+1], dz=pAttr[i*3+2]-pAttr[j*3+2];
+        if(dx*dx+dy*dy+dz*dz < maxD*maxD){
+          linePos.set([pAttr[i*3],pAttr[i*3+1],pAttr[i*3+2], pAttr[j*3],pAttr[j*3+1],pAttr[j*3+2]], lp); lp+=6;
+          if(lp >= linePos.length-6) break;
+        }
+      }
+    }
+    for(let k=lp;k<linePos.length;k++) linePos[k]=0;
+    lineGeo.attributes.position.needsUpdate = true;
+
+    points.rotation.y = t*.5 + mouseX*.15;
+    points.rotation.x = mouseY*.1;
+    lines.rotation.copy(points.rotation);
+    renderer.render(scene, camera);
+  })();
+})();
+
+/* ============ GSAP SCROLL ANIMATIONS ============ */
+gsap.registerPlugin(ScrollTrigger);
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  gsap.to(el,{opacity:1,y:0,duration:.9,ease:'power3.out',delay:(i%4)*.08,
+    scrollTrigger:{trigger:el,start:'top 88%'}});
+});
+gsap.to('#hero .container',{scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:1},y:120,opacity:.35});
+
+/* ============ COUNTERS ============ */
+document.querySelectorAll('[data-count]').forEach(el=>{
+  const target=+el.dataset.count;
+  ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:()=>{
+    gsap.to({v:0},{v:target,duration:1.8,ease:'power2.out',onUpdate:function(){el.textContent=Math.round(this.targets()[0].v);}});
+  }});
+});
+
+/* ============ CARD SPOTLIGHT ============ */
+document.querySelectorAll('.card').forEach(c=>{
+  c.addEventListener('mousemove',e=>{
+    const r=c.getBoundingClientRect();
+    c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    c.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+});
+
+/* ============ NAV / MOBILE MENU ============ */
+const header=document.getElementById('header'), burger=document.getElementById('burger'), navLinks=document.getElementById('navLinks');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>40));
+burger.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+/* ============ HERO TYPEWRITER ============ */
+(function(){
+  const el=document.getElementById('typeTarget');
+  const phrases=['work while you sleep.','scale without headcount.','turn data into revenue.','never call in sick.'];
+  let pi=0, ci=phrases[0].length, del=true;
+  (function tick(){
+    const cur=phrases[pi];
+    if(del){ ci--; if(ci<=0){del=false; pi=(pi+1)%phrases.length;} }
+    else { ci++; if(ci>=phrases[pi].length){ del=true; setTimeout(tick,2200); el.textContent=phrases[pi]; return; } }
+    el.textContent=phrases[pi].slice(0,ci) + (ci%2?'▌':'');
+    setTimeout(tick, del?45:75);
+  })();
+})();
+
+/* ============ FORM ============ */
+document.getElementById('contactForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target;
+  if(!f.name.value.trim()||!f.email.value.includes('@')||!f.message.value.trim()){
+    gsap.fromTo(f,{x:-8},{x:0,duration:.4,ease:'elastic.out(1,.3)'}); return;
+  }
+  const btn=f.querySelector('button');
+  btn.textContent='Sending…'; btn.disabled=true;
+  setTimeout(()=>{
+    btn.textContent='✓ Message Sent'; btn.style.background='linear-gradient(92deg,#22c55e,#22e6ff)';
+    document.getElementById('formMsg').style.display='block';
+    f.querySelectorAll('input,textarea').forEach(i=>i.value='');
+    setTimeout(()=>{btn.textContent='Send Message →';btn.disabled=false;btn.style.background='';},4000);
+  },1200);
+});
+</script>
+</body>
+</html>
